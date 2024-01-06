@@ -1,8 +1,8 @@
-fetch("https://datausa.io/api/data?drilldowns=Nation&measures=Population")
+fetch("https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students")
     .then(function (response){
         response.json().then(function (data){
             console.log(data);
-            let array = data.data;
+            let array = data;
 
             let html = document.getElementById('tb');
             let stt = 1;
@@ -11,9 +11,9 @@ fetch("https://datausa.io/api/data?drilldowns=Nation&measures=Population")
                     <thead>
                     <tr>
                         <th scope="col">STT</th>
-                        <th scope="col">Nation</th>
-                        <th scope="col">Year</th>
-                        <th scope="col">Population</th>
+                        <th scope="col">Ảnh đại diện</th>
+                        <th scope="col">Họ và tên</th>
+                        <th scope="col">Ngày tạo</th>
                         
                     </tr>
                     </thead>
@@ -24,9 +24,9 @@ fetch("https://datausa.io/api/data?drilldowns=Nation&measures=Population")
                 child_html += `<tbody>
                         <tr>
                             <td>${stt++}</td>
-                            <td>${element.Nation}</td>
-                            <td>${element.Year}</td>
-                            <td>${element.Population}</td>
+                            <td><img src="${element.avatar}" alt=""></td>
+                            <td>${element.name}</td>
+                            <td>${element.createdAt}</td>
                             
                         </tr>
                         
