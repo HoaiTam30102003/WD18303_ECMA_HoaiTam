@@ -19,19 +19,19 @@ fetch("https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students")
                     </thead>
                     `
 
-            array.forEach(element => {
-                console.log(element);
+            for(let {avatar, name, createdAt} of array) {
+
                 child_html += `<tbody>
                         <tr>
                             <td>${stt++}</td>
-                            <td><img src="${element.avatar}" alt=""></td>
-                            <td>${element.name}</td>
-                            <td>${element.createdAt}</td>
+                            <td><img src="${avatar}" alt=""></td>
+                            <td>${name}</td>
+                            <td>${createdAt}</td>
                             
                         </tr>
                         
                         </tbody>`
-            })
+            }
 
             child_html += `</table>`;
             html.innerHTML = child_html;
