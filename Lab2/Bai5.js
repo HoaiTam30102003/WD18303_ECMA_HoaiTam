@@ -2,73 +2,50 @@ function generateTableHeader(headerTitles){
     if (!headerTitles || headerTitles.length === 0){
         return "";
     }
-
-    let html = '';
+    let html = ``;
 
     headerTitles.forEach(element => {
         html += `<th>${element}</th>`;
+        // console.log(element);
     });
-
-
-    return `<thead><tr>${html}</tr></thead>`;
+    return `<thead><tr class="text-center">${html}</tr></thead>`;
 }
 
-function generateTableRow(object){
-    if (!object || object.length === 0){
-        return '';
+function generateTableRowStudent(object) {
+    if (!object || object.length === 0) {
+        return "";
     }
-
     return `<tr>
-        <td>${object.id}</td>
-        <td>${object.name}</td>
-        <td><img src="${object.avatar}" alt="" height="100px"></td>
-        <td>${object.createAt}</td>
-    </tr>`;
+            <td class="text-center">${object.id}</td>
+            <td>${object.name}</td>
+            <td class="text-center"><img src="${object.avatar}" height="80"></td>
+            <td class="text-center">${object.createdAt}</td>
+        </tr>`;
 }
 
-function generateTable(headers, data){
-   let headerRow = generateTableHeader(headers);
-
-   let html = '';
-
-   data.forEach(element => {
-       html += generateTableRow(element);
-   })
-
-    return `<table>${headerRow} <tbody>${html}</tbody></table>`;
+function generateTable(headers,data){
+    if (!headers || !data || headers.length === 0 || data.length === 0) {
+        return "";
+    }
+    let headerRow = generateTableHeader(headers);
+    let html = '';
+    data.forEach(element => {
+        html += generateTableRowStudent(element)
+    });
+    return` <table class="table table-bordered border-danger">${headerRow}<tbody>${html}</tbody></table>`;
 }
 
-let obj = [
-        {
-            id: 1,
-            name: "May Ne",
-            avatar: "https://scontent.fvca1-1.fna.fbcdn.net/v/t1.6435-9/120315532_2898958557005122_8805783958124313158_n.png?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=mA2RXjn_jzMAX-19JIh&_nc_ht=scontent.fvca1-1.fna&oh=00_AfBHjv2LOcA11YPXbrEy0bsnTsgL8ykeRztJ-7Xnn21PNg&oe=65C4B2DE",
-            createAt: "2024/01/09"
-        },
-        {
-            id: 2,
-            name: "May Ne 2",
-            avatar: "https://scontent.fvca1-1.fna.fbcdn.net/v/t1.6435-9/120315532_2898958557005122_8805783958124313158_n.png?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=mA2RXjn_jzMAX-19JIh&_nc_ht=scontent.fvca1-1.fna&oh=00_AfBHjv2LOcA11YPXbrEy0bsnTsgL8ykeRztJ-7Xnn21PNg&oe=65C4B2DE",
-            createAt: "2024/01/10"
-        },
-        {
-            id: 3,
-            name: "May Ne 3",
-            avatar: "https://scontent.fvca1-1.fna.fbcdn.net/v/t1.6435-9/120315532_2898958557005122_8805783958124313158_n.png?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=mA2RXjn_jzMAX-19JIh&_nc_ht=scontent.fvca1-1.fna&oh=00_AfBHjv2LOcA11YPXbrEy0bsnTsgL8ykeRztJ-7Xnn21PNg&oe=65C4B2DE",
-            createAt: "2024/01/11"
-        },
-        {
-            id: 4,
-            name: "May Ne 4",
-            avatar: "https://scontent.fvca1-1.fna.fbcdn.net/v/t1.6435-9/120315532_2898958557005122_8805783958124313158_n.png?_nc_cat=105&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=mA2RXjn_jzMAX-19JIh&_nc_ht=scontent.fvca1-1.fna&oh=00_AfBHjv2LOcA11YPXbrEy0bsnTsgL8ykeRztJ-7Xnn21PNg&oe=65C4B2DE",
-            createAt: "2024/01/12"
-        }
-    ];
 
-let header = [
-    "ID",
-    "Họ và tên",
-    "Avatar",
-    "Ngày tạo"
-];
-document.write(generateTable(header, obj))
+
+fetch("https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students")
+    .then(function(response){
+        response.json().then(function(data){
+            let headers = ["STT","Họ Và tên", "Ảnh Đại Diện", "Ngày Tạo"]
+            let tableHtml =generateTable(headers, data);
+            let table = document.getElementById("tb");
+            table.innerHTML= tableHtml;
+        })
+    })
+    .catch(function(err){
+
+    });
