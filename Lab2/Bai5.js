@@ -40,7 +40,7 @@ function generateTable(headers,data){
 fetch("https://65929f4fbb129707198fe18e.mockapi.io/tinhpv10/students")
     .then(function(response){
         response.json().then(function(data){
-            let headers = ["STT","Họ và tên", "Ảnh Đại Diện", "Ngày tạo"]
+            let headers = ["STT","Họ Và tên", "Ảnh Đại Diện", "Ngày Tạo"]
             let tableHtml =generateTable(headers, data);
             let table = document.getElementById("tb");
             table.innerHTML= tableHtml;
