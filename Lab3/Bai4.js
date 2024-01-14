@@ -10,4 +10,6 @@ let convertTemperature = (temperature, unit) => {
         return err;
     }
 }
-console.log(convertTemperature(30, "C"))
+console.log(convertTemperature(30, "C"));
+console.log(convertTemperature(30, "F"));
+console.log(convertTemperature(30, "R"))
