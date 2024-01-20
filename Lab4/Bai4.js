@@ -29,7 +29,7 @@ let array = [
     "2",
     "3"
 ];
-[a,b,c] = array
+let [a,b,c] = array
 
 let data = {
     data: [
@@ -41,7 +41,7 @@ let data = {
 
 let {array_data} = data;
 console.log(array_data);
-const axios = require('axios').default;
+
 
 const API_URL = "http://localhost:3000/";
 axios.get(API_URL+ "comments").then((data) => console.log(data.data));

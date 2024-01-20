@@ -1,5 +1,5 @@
 //1
-const axios = require('axios');
+
 async function fetchUrls(urls) {
     const results = [];
     for (const url of urls) {
