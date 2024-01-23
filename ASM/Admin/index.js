@@ -14,8 +14,12 @@ fetch(productAPI)
                         <td>${index++}</td>
                         <td>${name}</td>
                         <td><img src="${image}" width="100px"></td>
-                        <td>${price}</td>
+                        <td>${price} đ</td>
                         <td>${detail}</td>
+                        <td>
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
+                        </td>
                     </tr>
                 `
             }

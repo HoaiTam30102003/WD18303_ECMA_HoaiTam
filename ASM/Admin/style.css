@@ -79,7 +79,7 @@ footer{
 }
   table {
     width: 100%;
-    margin: 20px 0;
+    margin: 0px 0;
     border-collapse: collapse;
   }
 
@@ -96,6 +96,10 @@ footer{
   tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+
+td {
+    text-align: center;
+}
 
   .modal {
     display: none;
@@ -147,8 +151,9 @@ footer{
     margin: 20px 0;
   }
   button {
-    background-color: green;
-    color: white;
+    background-color: #ff818c;
+    color: black;
+      font-size: medium;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -162,6 +167,7 @@ footer{
 
   .lb-name {
       padding: 10px;
+      margin: 20px 0;
       font-size: 20px;
       border-radius: 5px;
       height: 40px;
