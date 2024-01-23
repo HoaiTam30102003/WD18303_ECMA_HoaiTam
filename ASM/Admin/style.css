@@ -147,8 +147,9 @@ footer{
     margin: 20px 0;
   }
   button {
-    background-color: green;
-    color: white;
+    background-color: #ff818c;
+    color: black;
+      font-size: medium;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
