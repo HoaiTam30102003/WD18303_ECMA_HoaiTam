@@ -1,0 +1,274 @@
+{
+  "products": [
+    {
+      "name": "name 1",
+      "cate_id": 35,
+      "detail": "detail 1",
+      "image": "https://loremflickr.com/640/480",
+      "price": 87,
+      "id": "1"
+    },
+    {
+      "name": "name 2",
+      "cate_id": 18,
+      "detail": "detail 2",
+      "image": "https://loremflickr.com/640/480",
+      "price": 38,
+      "id": "2"
+    },
+    {
+      "name": "name 3",
+      "cate_id": 85,
+      "detail": "detail 3",
+      "image": "https://loremflickr.com/640/480",
+      "price": 22,
+      "id": "3"
+    },
+    {
+      "name": "name 4",
+      "cate_id": 33,
+      "detail": "detail 4",
+      "image": "https://loremflickr.com/640/480",
+      "price": 11,
+      "id": "4"
+    },
+    {
+      "name": "name 5",
+      "cate_id": 43,
+      "detail": "detail 5",
+      "image": "https://loremflickr.com/640/480",
+      "price": 100,
+      "id": "5"
+    },
+    {
+      "name": "name 6",
+      "cate_id": 70,
+      "detail": "detail 6",
+      "image": "https://loremflickr.com/640/480",
+      "price": 13,
+      "id": "6"
+    },
+    {
+      "name": "name 7",
+      "cate_id": 6,
+      "detail": "detail 7",
+      "image": "https://loremflickr.com/640/480",
+      "price": 76,
+      "id": "7"
+    },
+    {
+      "name": "name 8",
+      "cate_id": 13,
+      "detail": "detail 8",
+      "image": "https://loremflickr.com/640/480",
+      "price": 50,
+      "id": "8"
+    },
+    {
+      "name": "name 9",
+      "cate_id": 55,
+      "detail": "detail 9",
+      "image": "https://loremflickr.com/640/480",
+      "price": 2,
+      "id": "9"
+    },
+    {
+      "name": "name 10",
+      "cate_id": 34,
+      "detail": "detail 10",
+      "image": "https://loremflickr.com/640/480",
+      "price": 64,
+      "id": "10"
+    },
+    {
+      "name": "name 11",
+      "cate_id": 17,
+      "detail": "detail 11",
+      "image": "https://loremflickr.com/640/480",
+      "price": 65,
+      "id": "11"
+    },
+    {
+      "name": "name 12",
+      "cate_id": 85,
+      "detail": "detail 12",
+      "image": "https://loremflickr.com/640/480",
+      "price": 38,
+      "id": "12"
+    },
+    {
+      "name": "name 13",
+      "cate_id": 84,
+      "detail": "detail 13",
+      "image": "https://loremflickr.com/640/480",
+      "price": 36,
+      "id": "13"
+    },
+    {
+      "name": "name 14",
+      "cate_id": 87,
+      "detail": "detail 14",
+      "image": "https://loremflickr.com/640/480",
+      "price": 61,
+      "id": "14"
+    },
+    {
+      "name": "name 15",
+      "cate_id": 78,
+      "detail": "detail 15",
+      "image": "https://loremflickr.com/640/480",
+      "price": 63,
+      "id": "15"
+    },
+    {
+      "name": "name 16",
+      "cate_id": 11,
+      "detail": "detail 16",
+      "image": "https://loremflickr.com/640/480",
+      "price": 8,
+      "id": "16"
+    },
+    {
+      "name": "name 17",
+      "cate_id": 59,
+      "detail": "detail 17",
+      "image": "https://loremflickr.com/640/480",
+      "price": 53,
+      "id": "17"
+    },
+    {
+      "name": "name 18",
+      "cate_id": 68,
+      "detail": "detail 18",
+      "image": "https://loremflickr.com/640/480",
+      "price": 92,
+      "id": "18"
+    },
+    {
+      "name": "name 19",
+      "cate_id": 11,
+      "detail": "detail 19",
+      "image": "https://loremflickr.com/640/480",
+      "price": 16,
+      "id": "19"
+    },
+    {
+      "name": "name 20",
+      "cate_id": 15,
+      "detail": "detail 20",
+      "image": "https://loremflickr.com/640/480",
+      "price": 65,
+      "id": "20"
+    },
+    {
+      "name": "name 21",
+      "cate_id": 94,
+      "detail": "detail 21",
+      "image": "https://loremflickr.com/640/480",
+      "price": 42,
+      "id": "21"
+    },
+    {
+      "name": "name 22",
+      "cate_id": 27,
+      "detail": "detail 22",
+      "image": "https://loremflickr.com/640/480",
+      "price": 45,
+      "id": "22"
+    },
+    {
+      "name": "name 23",
+      "cate_id": 23,
+      "detail": "detail 23",
+      "image": "https://loremflickr.com/640/480",
+      "price": 48,
+      "id": "23"
+    },
+    {
+      "name": "name 24",
+      "cate_id": 33,
+      "detail": "detail 24",
+      "image": "https://loremflickr.com/640/480",
+      "price": 45,
+      "id": "24"
+    },
+    {
+      "name": "name 25",
+      "cate_id": 28,
+      "detail": "detail 25",
+      "image": "https://loremflickr.com/640/480",
+      "price": 75,
+      "id": "25"
+    },
+    {
+      "name": "name 26",
+      "cate_id": 61,
+      "detail": "detail 26",
+      "image": "https://loremflickr.com/640/480",
+      "price": 50,
+      "id": "26"
+    },
+    {
+      "name": "name 27",
+      "cate_id": 61,
+      "detail": "detail 27",
+      "image": "https://loremflickr.com/640/480",
+      "price": 7,
+      "id": "27"
+    },
+    {
+      "name": "name 28",
+      "cate_id": 16,
+      "detail": "detail 28",
+      "image": "https://loremflickr.com/640/480",
+      "price": 7,
+      "id": "28"
+    },
+    {
+      "name": "name 29",
+      "cate_id": 32,
+      "detail": "detail 29",
+      "image": "https://loremflickr.com/640/480",
+      "price": 40,
+      "id": "29"
+    },
+    {
+      "name": "name 30",
+      "cate_id": 49,
+      "detail": "detail 30",
+      "image": "https://loremflickr.com/640/480",
+      "price": 33,
+      "id": "30"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Nước tẩy trang"
+    },
+    {
+      "id": 2,
+      "name": "Dầu tẩy trang"
+    },
+    {
+      "id": 3,
+      "name": "Kem chống nắng"
+    },
+    {
+      "id": 4,
+      "name": "Sữa rửa mặt"
+    },
+    {
+      "id": 5,
+      "name": "Tẩy da chết"
+    },
+    {
+      "id": 6,
+      "name": "Kem dưỡng"
+    },
+    {
+      "id": 7,
+      "name": "Xịt khoáng"
+    }
+  ]
+}
