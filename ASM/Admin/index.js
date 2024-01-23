@@ -17,8 +17,8 @@ fetch(productAPI)
                         <td>${price} đ</td>
                         <td>${detail}</td>
                         <td>
-                            <button type="button" class="btn btn-secondary">Sửa</button>
-                            <button type="button" class="btn btn-primary">Xoá</button>
+                            <button type="button" class="btn btn-success">Sửa</button>
+                            <button type="button" class="btn btn-danger">Xoá</button>
                         </td>
                     </tr>
                 `
