@@ -1,4 +1,4 @@
-let productAPI = "https://65a6699074cf4207b4eff5c1.mockapi.io/api/products";
+let productAPI = "http://localhost:3000/products";
 fetch(productAPI)
 .then(function (response){
     response.json().then(function (data){
@@ -20,7 +20,7 @@ fetch(productAPI)
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <a href="shop-single.html" class="h3 text-decoration-none"><p class="text-center">${name}</p></a>
+                                        <a href="shop-single.html" class="h3 text-decoration-none" id="proDetail" onclick="data()"><p class="text-center">${name}</p></a>
                                         <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                             
                                             <li class="pt-2">
@@ -47,3 +47,22 @@ fetch(productAPI)
     })
 })
 
+let cateAPI = "http://localhost:3000/category";
+fetch(cateAPI)
+    .then(function (response){
+        response.json().then(function (data){
+            console.log(data)
+            let cate = data;
+            let html = document.getElementById("cate");
+
+            let child_html = ``
+
+            for(let {name} of cate){
+                child_html += `
+                    <a class="text-decoration-none text-dark" href="#"><li class="mt-2 border border-1 rounded-3 p-2">${name}</li></a>
+                `
+            }
+            child_html += ``;
+            html.innerHTML = child_html;
+        })
+    })
