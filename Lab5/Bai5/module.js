@@ -1,4 +1,4 @@
-class APICaller {
+export class APICaller {
     constructor(baseUrl, endpoint) {
         this.baseUrl = baseUrl;
         this.endpoint = endpoint;
@@ -10,7 +10,7 @@ class APICaller {
 
 
 
-class Comment extends APICaller {
+export class Comment extends APICaller {
 
     constructor(baseUrl, endpoint, id, body, postId) {
         super(baseUrl, endpoint);
@@ -50,12 +50,3 @@ class Comment extends APICaller {
     }
 }
 
-a = new APICaller("http://localhost:3000/","comments")
-console.log(a.get())
-
-b = new Comment("http://localhost:3000/","comments/")
-console.log(b.getAll())
-console.log(b.add(2,"abcd", 1))
-console.log(b.edit(2,"2468",1))
-console.log(b.getOne(2))
-console.log(b.delete(2))
