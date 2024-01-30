@@ -1,3 +1,15 @@
-import {subtract} from "./module.js";
+export default function subtract(x, y) {
+    return x - y;
+}
 
-console.log(subtract(4,2))
+export function sum(x, y) {
+    return x + y;
+}
+
+export function nhan(x, y) {
+    return x * y;
+}
+
+export function chia(x, y) {
+    return x / y;
+}
