@@ -1,4 +1,7 @@
-import {uppercaseString, lowercaseString} from "./module.js";
+export const uppercaseString = (string) => {
+    return string.toUpperCase();
+}
 
-console.log(uppercaseString("haha"))
-console.log(lowercaseString("HAHA"))
+export const lowercaseString = (string) => {
+    return string.toLowerCase();
+}
