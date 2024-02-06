@@ -111,6 +111,7 @@ td {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+
   }
 
   .modal-content {
@@ -119,6 +120,7 @@ td {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+      border-radius: 10px;
   }
 
   .close {
@@ -134,11 +136,14 @@ td {
     cursor: pointer;
   }
 
-  input[type="text"] {
+  input[type="text"],
+  select,
+  textarea{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+      border-radius: 10px;
   }
   #image,#category{
     width: 100%;
@@ -151,7 +156,7 @@ td {
     margin: 20px 0;
   }
   button {
-    background-color: #ff818c;
+    background-color: #ff2121;
     color: black;
       font-size: medium;
     padding: 14px 20px;
@@ -166,10 +171,24 @@ td {
   }
 
   .lb-name {
-      padding: 10px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
       margin: 20px 0;
       font-size: 20px;
       border-radius: 5px;
       height: 40px;
       background-color: #ff818c;
+      display: flex;
+      justify-content: space-between;
+  }
+.lb-name label {
+ margin-top: 15px;
+}
+
+  .btn-add {
+      background-color: #ff2121;
+      padding-bottom: 30px;
+      cursor: pointer;
   }
